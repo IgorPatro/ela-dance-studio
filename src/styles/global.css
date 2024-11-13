@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply font-body font-light;
+  @apply font-body font-light text-gray-500;
+}
+
+.layout-container {
+  @apply mx-auto w-full max-w-360 px-8 sm:px-12 md:px-16;
 }

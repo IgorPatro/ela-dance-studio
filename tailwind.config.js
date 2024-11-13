@@ -14,6 +14,9 @@ module.exports = {
         primary: "#D999A3",
         accent: "#FFDEE3",
       },
+      maxWidth: {
+        360: "90rem",
+      },
     },
   },
   plugins: [],

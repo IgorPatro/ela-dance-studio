@@ -35,5 +35,45 @@ export const imagesQuery = graphql`
         )
       }
     }
+    about: file(name: { eq: "about" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
+    service1: file(name: { eq: "service1" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
+    service2: file(name: { eq: "service2" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
+    service3: file(name: { eq: "service3" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
   }
 `;

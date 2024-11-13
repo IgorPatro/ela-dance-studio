@@ -37,16 +37,16 @@ const NAV_ITEMS = [
 ];
 
 export const Navigation = () => {
-  const [isScrolledTop, setIsScrolledTop] = React.useState(true);
+  const [isUnderHero, setIsUnderHero] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
       // TODO: Define final value here
-      if (window.scrollY > 0) {
-        setIsScrolledTop(false);
+      if (window.scrollY < window.innerHeight) {
+        setIsUnderHero(false);
       } else {
-        setIsScrolledTop(true);
+        setIsUnderHero(true);
       }
     };
 
@@ -57,13 +57,12 @@ export const Navigation = () => {
     };
   }, []);
 
-  //   Nawigacja powinna być fixed dopiero poniej hero
   return (
     <>
       <div
         className={twMerge(
-          "fixed top-0 left-0 w-full z-20 p-5 flex justify-between transition-colors",
-          isScrolledTop ? "bg-transparent" : "bg-[rgba(255,255,255,1)]"
+          "top-0 left-0 w-full z-50 p-5 flex justify-between drop-shadow-md transition-all",
+          isUnderHero || isOpen ? "fixed bg-white" : "absolute"
         )}
       >
         <Link to="/">
@@ -71,8 +70,13 @@ export const Navigation = () => {
         </Link>
         <ul className="sm:flex gap-6 items-center hidden">
           {NAV_ITEMS.map((item) => (
-            <li key={item.name}>
-              <Link to={item.link}>{item.name}</Link>
+            <li
+              className="relative before:content-[''] px-2 before:-translate-x-full hover:before:translate-x-0 overflow-hidden before:transition-transform z-0 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-accent"
+              key={item.name}
+            >
+              <Link className="z-10 relative" to={item.link}>
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -89,7 +93,7 @@ export const Navigation = () => {
       </div>
       <nav
         className={twMerge(
-          "w-full h-full flex sm:hidden fixed top-0 left-0 bg-white z-10 transition-all",
+          "w-full h-full flex sm:hidden fixed top-0 left-0 bg-white z-40 transition-all",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
