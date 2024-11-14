@@ -4,6 +4,8 @@ import { Hero } from "components/hero";
 import { About } from "components/about";
 import { Services } from "components/services";
 import { Features } from "components/features";
+import { Pricing } from "components/pricing";
+import { SocialMedia } from "components/social-media";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -12,6 +14,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <About />
       <Services />
       <Features />
+      <Pricing />
+      <SocialMedia />
     </>
   );
 };

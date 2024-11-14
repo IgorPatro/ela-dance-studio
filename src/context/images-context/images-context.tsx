@@ -75,5 +75,15 @@ export const imagesQuery = graphql`
         )
       }
     }
+    social_media: file(name: { eq: "social-media" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
   }
 `;

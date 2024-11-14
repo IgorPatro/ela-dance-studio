@@ -1,6 +1,6 @@
 import React from "react";
 import { CiBadgeDollar } from "react-icons/ci";
-import { Feature } from "components/feature/feature";
+import { Feature } from "components/features/feature";
 import { FaCar } from "react-icons/fa";
 import { ImUserTie } from "react-icons/im";
 import { TbBulb } from "react-icons/tb";
