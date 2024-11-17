@@ -68,7 +68,7 @@ export const Navigation = () => {
         <Link to="/">
           <img className="h-6" src={logo} alt="Logo" />
         </Link>
-        <ul className="sm:flex gap-6 items-center hidden">
+        <ul className="md:flex gap-6 items-center hidden">
           {NAV_ITEMS.map((item) => (
             <li
               className="relative before:content-[''] px-2 before:-translate-x-full hover:before:translate-x-0 overflow-hidden before:transition-transform z-0 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-accent"
@@ -81,7 +81,7 @@ export const Navigation = () => {
           ))}
         </ul>
         <button
-          className="flex sm:hidden"
+          className="flex md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? (
@@ -93,7 +93,7 @@ export const Navigation = () => {
       </div>
       <nav
         className={twMerge(
-          "w-full h-full flex sm:hidden fixed top-0 left-0 bg-white z-40 transition-all",
+          "w-full h-full flex md:hidden fixed top-0 left-0 bg-white z-40 transition-all",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

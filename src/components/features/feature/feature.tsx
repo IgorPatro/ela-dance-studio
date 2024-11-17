@@ -15,7 +15,9 @@ export const Feature = ({ icon, title, children }: FeatureProps) => {
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-1.5">
         <Icon className="text-primary w-7 h-7" />
-        <h3 className="text-xl text-gray-900 font-display">{title}</h3>
+        <h3 className="text-xl text-gray-900 font-display text-nowrap">
+          {title}
+        </h3>
       </div>
       <p>{children}</p>
       <img className="w-min mt-4" src={rose} alt="rose" />

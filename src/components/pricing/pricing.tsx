@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { CgInfinity } from "react-icons/cg";
 
@@ -7,7 +8,7 @@ const PRICING_ITEMS = [
     price: "150 PLN",
   },
   {
-    title: "Godzina lekcji (60 minut) - dojazd*",
+    title: "Godzina lekcji (60 minut) - z dojazdem do domu*",
     price: "200 PLN",
   },
   {
@@ -23,13 +24,13 @@ const PRICING_ITEMS = [
 export const Pricing = () => {
   return (
     <section className="py-10">
-      <div className="layout-container flex flex-col gap-8">
-        <header className="flex flex-col gap-2 max-w-4xl text-center">
+      <div className="layout-container flex flex-col gap-8 justify-center">
+        <header className="flex flex-col gap-2 max-w-4xl text-center m-auto">
           <p className="uppercase flex gap-2 items-center text-base text-primary justify-center">
             <CgInfinity className="w-8 h-8" /> ile to kosztuje
           </p>
           <h1 className="font-display text-5xl text-gray-900">Cennik</h1>
-          <p className="text-xl text-center">
+          <p className="text-base text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
             distinctio.
           </p>
@@ -48,6 +49,13 @@ export const Pricing = () => {
             ))}
           </tbody>
         </table>
+        <p className="text-xs">
+          * dojazd możliwy na terenie Krakowa, w przypadku wystarczającej ilości
+          miejsca. Dowiedź się więcej{" "}
+          <Link to="#faq" className="underline">
+            tutaj
+          </Link>
+        </p>
       </div>
     </section>
   );

@@ -13,16 +13,14 @@ export const SocialMedia = () => {
       <div className="layout-container">
         <header className="flex flex-col gap-2 max-w-4xl">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
-            <CgInfinity className="w-8 h-8" /> więcej naszych zdjęć
+            <CgInfinity className="w-8 h-8" /> zdjęcia & kursanci
           </p>
-          <h1 className="font-display text-5xl text-gray-900">
-            Nasze social media
-          </h1>
+          <h1 className="font-display text-5xl text-gray-900">Social Media</h1>
           <p className="text-base text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
             quam odio. Proin elementum in nibh at maximus.
           </p>
-          <Button className="mt-10">Instagram</Button>
+          <Button className="mt-5">Instagram</Button>
         </header>
       </div>
       <GatsbyImage

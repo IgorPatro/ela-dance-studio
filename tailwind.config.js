@@ -15,7 +15,7 @@ module.exports = {
         accent: "#FFDEE3",
       },
       maxWidth: {
-        360: "90rem",
+        320: "80rem",
       },
     },
   },

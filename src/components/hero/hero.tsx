@@ -13,13 +13,13 @@ export const Hero = () => {
       <div className="layout-container">
         <header className="flex flex-col gap-2 max-w-4xl pt-10">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
-            <CgInfinity className="w-8 h-8" /> znajdź swoją szansę
+            <CgInfinity className="w-8 h-8" /> przepis na idealne wesele
           </p>
-          <h1 className="font-display text-7xl text-gray-900">
-            Oczaruj gości <br /> swoim tańcem
+          <h1 className="font-display text-5xl text-gray-900">
+            Oczaruj gości <br /> swoim pierwszym tańcem
           </h1>
           <p className="text-xl text-gray-500">
-            Krakowska nauka z dojazdem do domu
+            Marzysz o wspaniałym tańcu na swoim ślubie? Ze mną to możliwe!
           </p>
           <Button className="mt-10">Zobacz więcej</Button>
         </header>

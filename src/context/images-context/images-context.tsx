@@ -45,6 +45,16 @@ export const imagesQuery = graphql`
         )
       }
     }
+    petal: file(name: { eq: "petal" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
     service1: file(name: { eq: "service1" }) {
       childImageSharp {
         gatsbyImageData(
@@ -76,6 +86,16 @@ export const imagesQuery = graphql`
       }
     }
     social_media: file(name: { eq: "social-media" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
+    footer: file(name: { eq: "footer" }) {
       childImageSharp {
         gatsbyImageData(
           quality: 100

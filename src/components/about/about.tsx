@@ -9,14 +9,12 @@ export const About = () => {
 
   return (
     <section className="py-10">
-      <div className="layout-container flex flex-col gap-8">
-        <header className="flex flex-col gap-2 max-w-4xl">
+      <div className="layout-container flex flex-col gap-8 lg:flex-row">
+        <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
             <CgInfinity className="w-8 h-8" /> dowiedź się więcej
           </p>
-          <h1 className="font-display text-5xl text-gray-900">
-            O dance studio
-          </h1>
+          <h1 className="font-display text-5xl text-gray-900">O mnie</h1>
           <p className="text-xl">
             Nasze szybkie motto tutaj znaleźć się powinno i naszych kursantów
             motywować
@@ -30,7 +28,11 @@ export const About = () => {
             pulvinar, molestie eros non, consectetur tortor.
           </p>
         </header>
-        <GatsbyImage className="w-full" image={getImage(about)} alt="O nas" />
+        <GatsbyImage
+          className="w-full max-w-96 m-auto lg:w-1/2 object-contain"
+          image={getImage(about)}
+          alt="O nas"
+        />
       </div>
     </section>
   );
