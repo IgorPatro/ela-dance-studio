@@ -68,7 +68,7 @@ export const Navigation = () => {
         <Link to="/">
           <img className="h-6" src={logo} alt="Logo" />
         </Link>
-        <ul className="md:flex gap-6 items-center hidden">
+        <ul className="md:flex gap-4 items-center hidden">
           {NAV_ITEMS.map((item) => (
             <li
               className="relative before:content-[''] px-2 before:-translate-x-full hover:before:translate-x-0 overflow-hidden before:transition-transform z-0 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-accent"

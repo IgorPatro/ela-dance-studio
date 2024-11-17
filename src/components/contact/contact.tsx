@@ -18,8 +18,8 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-10">
-      <div className="layout-container flex flex-col gap-8 lg:flex-row lg:gap-16">
+    <section className="py-10 lg:py-14 lg:pb-24 2xl:py-16 2xl:pb-32">
+      <div className="layout-container flex flex-col gap-8 lg:flex-row lg:gap-16 lg:items-center">
         <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
             <CgInfinity className="w-8 h-8" /> napisz do mnie

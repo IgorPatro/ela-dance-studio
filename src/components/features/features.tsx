@@ -34,8 +34,8 @@ const FEATURE_ITEMS = [
 
 export const Features = () => {
   return (
-    <section className="py-10">
-      <div className="layout-container flex flex-col gap-8 lg:flex-row">
+    <section className="py-10 lg:py-14 2xl:py-16">
+      <div className="layout-container flex flex-col gap-8 lg:flex-row 2xl:gap-12 w-full">
         {FEATURE_ITEMS.map((item) => (
           <Feature key={item.title} icon={item.icon} title={item.title}>
             {item.content}

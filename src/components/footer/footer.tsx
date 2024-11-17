@@ -14,10 +14,10 @@ export const Footer = () => {
   const [email, setEmail] = React.useState("");
 
   return (
-    <section className="w-full relative items-center justify-center flex py-8">
+    <section className="w-full relative items-center justify-center flex py-8 lg:py-10">
       <div className="layout-container items-center">
         <img className="h-8 m-auto" src={logo} alt="Logo" />
-        <div className="flex flex-col gap-6 justify-between my-6">
+        <div className="flex flex-col gap-6 justify-between my-6 lg:flex-row lg:my-10">
           <div className="text-sm flex flex-col gap-1">
             <h6 className="text-base text-gray-900">Newsletter</h6>
             <p>Ciekawostki ze świata tańca, turniejów i nowe kursy.</p>
@@ -28,7 +28,7 @@ export const Footer = () => {
               icon={
                 <IoIosSend
                   onClick={() => console.log(email)}
-                  className="absolute w-5 h-5 right-4 top-1/2 -translate-y-1/2"
+                  className="hover:text-black cursor-pointer absolute w-5 h-5 right-4 top-1/2 -translate-y-1/2"
                 />
               }
             />
@@ -67,7 +67,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-2" />
+        <hr className="my-2 lg:mt-10 lg:mb-4" />
 
         <div className="text-xs flex justify-between">
           <span>All rights reserved &copy; 2024</span>

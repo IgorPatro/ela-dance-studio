@@ -23,7 +23,7 @@ const PRICING_ITEMS = [
 
 export const Pricing = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 lg:py-14 2xl:py-16">
       <div className="layout-container flex flex-col gap-8 justify-center">
         <header className="flex flex-col gap-2 max-w-4xl text-center m-auto">
           <p className="uppercase flex gap-2 items-center text-base text-primary justify-center">
@@ -35,27 +35,29 @@ export const Pricing = () => {
             distinctio.
           </p>
         </header>
-        <table className="bg-accent rounded-lg">
-          <tbody>
-            {PRICING_ITEMS.map((item) => (
-              <tr key={item.title}>
-                <td className="p-3 border border-white border-collapse">
-                  {item.title}
-                </td>
-                <td className="text-center border p-3 border-white border-collapse">
-                  {item.price}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <p className="text-xs">
-          * dojazd możliwy na terenie Krakowa, w przypadku wystarczającej ilości
-          miejsca. Dowiedź się więcej{" "}
-          <Link to="#faq" className="underline">
-            tutaj
-          </Link>
-        </p>
+        <div className="max-w-3xl w-full m-auto">
+          <table className="bg-accent rounded-lg m-auto w-full">
+            <tbody>
+              {PRICING_ITEMS.map((item) => (
+                <tr key={item.title}>
+                  <td className="p-3 border border-white border-collapse">
+                    {item.title}
+                  </td>
+                  <td className="text-center border p-3 border-white border-collapse">
+                    {item.price}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="text-xs mt-3">
+            * dojazd możliwy na terenie Krakowa, w przypadku wystarczającej
+            ilości miejsca. Dowiedź się więcej{" "}
+            <Link to="#faq" className="underline">
+              tutaj
+            </Link>
+          </p>
+        </div>
       </div>
     </section>
   );

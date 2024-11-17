@@ -11,17 +11,17 @@ export const Hero = () => {
   return (
     <section className="w-full min-h-screen max-h-screen relative items-center justify-center flex">
       <div className="layout-container">
-        <header className="flex flex-col gap-2 max-w-4xl pt-10">
+        <header className="flex flex-col gap-2 md:gap-3 max-w-xl pt-10">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
             <CgInfinity className="w-8 h-8" /> przepis na idealne wesele
           </p>
-          <h1 className="font-display text-5xl text-gray-900">
+          <h1 className="font-display text-5xl xl:text-7xl text-gray-900">
             Oczaruj gości <br /> swoim pierwszym tańcem
           </h1>
           <p className="text-xl text-gray-500">
             Marzysz o wspaniałym tańcu na swoim ślubie? Ze mną to możliwe!
           </p>
-          <Button className="mt-10">Zobacz więcej</Button>
+          <Button className="mt-6">Zobacz więcej</Button>
         </header>
       </div>
       <GatsbyImage

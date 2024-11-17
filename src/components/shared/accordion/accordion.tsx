@@ -30,7 +30,7 @@ export const Accordion = ({ title, children }: AccordionProps) => {
         />
       </button>
       <Collapse isOpened={isOpen}>
-        <div className="pb-2">{children}</div>
+        <div className="py-3">{children}</div>
       </Collapse>
       <hr />
     </div>

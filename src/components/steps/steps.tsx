@@ -17,9 +17,9 @@ export const Steps = () => {
   const { petal } = useImagesContext();
 
   return (
-    <section className="py-10">
-      <div className="layout-container flex flex-col-reverse gap-8 lg:flex-row">
-        <div>
+    <section className="py-10 lg:py-14 2xl:py-16">
+      <div className="layout-container flex flex-col-reverse gap-8 lg:flex-row lg:items-center">
+        <div className="lg:w-1/2">
           <ul className="flex flex-col gap-2">
             {STEP_ITEMS.map((item) => (
               <li

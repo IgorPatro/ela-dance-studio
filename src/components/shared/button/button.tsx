@@ -21,7 +21,7 @@ export const Button = ({
       type={type}
     >
       <span className="z-10">{children}</span>
-      <div className="group-hover:translate-x-0 duration-300 ease-in-out -translate-x-full transition-transform absolute top-0 left-0 w-full h-full bg-accent"></div>
+      <div className="group-hover:translate-x-0 duration-300 ease-in-out -translate-x-[110%] transition-transform absolute top-0 left-0 w-full h-full bg-accent"></div>
     </button>
   );
 };

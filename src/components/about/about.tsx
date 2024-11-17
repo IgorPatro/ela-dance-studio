@@ -8,7 +8,7 @@ export const About = () => {
   const { about } = useImagesContext();
 
   return (
-    <section className="py-10">
+    <section className="py-10 lg:py-14 lg:pt-24 2xl:py-16 2xl:pt-32">
       <div className="layout-container flex flex-col gap-8 lg:flex-row">
         <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
