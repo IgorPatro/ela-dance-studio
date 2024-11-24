@@ -4,12 +4,16 @@ import { useImagesContext } from "context/images-context/images-context";
 import { getImage } from "utils/image";
 import { CgInfinity } from "react-icons/cg";
 import { Button } from "components/shared/button";
+import { homeUrl } from "components/navigation/utils";
 
 export const Hero = () => {
   const { hero } = useImagesContext();
 
   return (
-    <section className="w-full min-h-screen max-h-screen relative items-center justify-center flex">
+    <section
+      id={homeUrl}
+      className="w-full min-h-screen max-h-screen relative items-center justify-center flex"
+    >
       <div className="layout-container">
         <header className="flex flex-col gap-2 md:gap-3 max-w-xl pt-10">
           <p className="uppercase flex gap-2 items-center text-base text-primary">

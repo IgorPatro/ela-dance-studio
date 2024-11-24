@@ -1,3 +1,4 @@
+import { faqUrl } from "components/navigation/utils";
 import { Accordion } from "components/shared/accordion";
 import React from "react";
 import { CgInfinity } from "react-icons/cg";
@@ -27,7 +28,7 @@ const FAQ_ITEMS = [
 
 export const FAQ = () => {
   return (
-    <section className="py-10 lg:py-14 2xl:py-16">
+    <section id={faqUrl} className="py-10 lg:py-14 2xl:py-16">
       <div className="layout-container flex flex-col-reverse gap-8 lg:flex-row lg:gap-16">
         <div className="flex flex-col gap-4 lg:w-1/2">
           {FAQ_ITEMS.map((item) => (

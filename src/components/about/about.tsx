@@ -1,3 +1,4 @@
+import { aboutUrl } from "components/navigation/utils";
 import { useImagesContext } from "context/images-context/images-context";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
@@ -8,7 +9,10 @@ export const About = () => {
   const { about } = useImagesContext();
 
   return (
-    <section className="py-10 lg:py-14 lg:pt-24 2xl:py-16 2xl:pt-32">
+    <section
+      id={aboutUrl}
+      className="py-10 lg:py-14 lg:pt-24 2xl:py-16 2xl:pt-32"
+    >
       <div className="layout-container flex flex-col gap-8 lg:flex-row">
         <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
@@ -23,7 +27,7 @@ export const About = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
             quam odio. Proin elementum in nibh at maximus. Pellentesque dapibus
             iaculis imperdiet. Vestibulum eget ligula iaculis, semper neque eu,
-            sagittis est. Quisque eget dolor sit amet tellus pretium sodales.
+            sagittis est. Quisque eget dolor sit amet tellus pretium sodales ❤️
             Nunc rhoncus tellus id velit finibus ultrices. Praesent sed tortor
             pulvinar, molestie eros non, consectetur tortor.
           </p>

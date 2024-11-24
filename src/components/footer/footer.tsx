@@ -18,7 +18,7 @@ export const Footer = () => {
       <div className="layout-container items-center">
         <img className="h-8 m-auto" src={logo} alt="Logo" />
         <div className="flex flex-col gap-6 justify-between my-6 lg:flex-row lg:my-10">
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 lg:gap-2">
             <h6 className="text-base text-gray-900">Newsletter</h6>
             <p>Ciekawostki ze świata tańca, turniejów i nowe kursy.</p>
             <Input
@@ -33,9 +33,9 @@ export const Footer = () => {
               }
             />
           </div>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 lg:gap-2">
             <h6 className="text-base text-gray-900">Kontakt</h6>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
                 <TfiEmail className="w-4 h-4" />
                 <a href="mailto:hello@eladancestudio.pl">
@@ -52,7 +52,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 lg:gap-2">
             <h6 className="text-base text-gray-900">Social Media</h6>
             <ul>
               <li>

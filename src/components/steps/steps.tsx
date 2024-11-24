@@ -1,3 +1,4 @@
+import { contactUrl, stepsUrl } from "components/navigation/utils";
 import { Button } from "components/shared/button";
 import { useImagesContext } from "context/images-context/images-context";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -17,7 +18,7 @@ export const Steps = () => {
   const { petal } = useImagesContext();
 
   return (
-    <section className="py-10 lg:py-14 2xl:py-16">
+    <section id={stepsUrl} className="py-10 lg:py-14 2xl:py-16">
       <div className="layout-container flex flex-col-reverse gap-8 lg:flex-row lg:items-center">
         <div className="lg:w-1/2">
           <ul className="flex flex-col gap-2">
@@ -53,7 +54,9 @@ export const Steps = () => {
             użytkowy, dzięki któremu zatańczycie do każdej muzyki i w każdym
             miejscu. W końcu na weselu trzeba czarować całą noc 😉
           </p>
-          <Button className="mt-4">Rozpocznij naukę</Button>
+          <Button className="mt-4" href={"#" + contactUrl}>
+            Rozpocznij naukę
+          </Button>
         </header>
       </div>
     </section>

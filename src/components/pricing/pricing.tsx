@@ -1,3 +1,4 @@
+import { pricingUrl } from "components/navigation/utils";
 import { Link } from "gatsby";
 import React from "react";
 import { CgInfinity } from "react-icons/cg";
@@ -23,7 +24,7 @@ const PRICING_ITEMS = [
 
 export const Pricing = () => {
   return (
-    <section className="py-10 lg:py-14 2xl:py-16">
+    <section id={pricingUrl} className="py-10 lg:py-14 2xl:py-16">
       <div className="layout-container flex flex-col gap-8 justify-center">
         <header className="flex flex-col gap-2 max-w-4xl text-center m-auto">
           <p className="uppercase flex gap-2 items-center text-base text-primary justify-center">

@@ -20,7 +20,7 @@ export const Accordion = ({ title, children }: AccordionProps) => {
       >
         <div className="flex gap-2 items-center">
           <CgInfinity className="w-8 h-8 text-primary" />
-          <h3 className="text-lg font-display">{title}</h3>
+          <h3 className="text-lg font-display text-left">{title}</h3>
         </div>
         <GoChevronDown
           className={twMerge(
