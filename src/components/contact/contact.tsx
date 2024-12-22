@@ -1,4 +1,3 @@
-import { Accordion } from "components/shared/accordion";
 import { Button } from "components/shared/button";
 import { Input } from "components/shared/input";
 import React from "react";
@@ -8,8 +7,19 @@ import { CgPhone } from "react-icons/cg";
 import { CgPin } from "react-icons/cg";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { contactUrl } from "components/navigation/utils";
+import { useImagesContext } from "context/images-context/images-context";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { getImage } from "utils/image";
+import { renderPetals } from "utils/petal";
+
+const petals = [
+  "w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]",
+  "w-8 h-8 absolute bottom-[15%] left-[5%] z-10 rotate-[-54deg]",
+];
 
 export const Contact = () => {
+  const { calendar } = useImagesContext();
+
   const [email, setEmail] = React.useState("");
   const [name, setName] = React.useState("");
   const [phone, setPhone] = React.useState("");
@@ -19,10 +29,16 @@ export const Contact = () => {
     console.log({ email, name, phone });
   };
 
+  const onCalendly = () => {
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/eladancestudio/konsultacja",
+    });
+  };
+
   return (
     <section
       id={contactUrl}
-      className="py-10 lg:py-14 lg:pb-24 2xl:py-16 2xl:pb-32"
+      className="relative py-10 lg:py-14 lg:pb-24 2xl:py-16 2xl:pb-32"
     >
       <div className="layout-container flex flex-col gap-8 lg:flex-row lg:gap-16 lg:items-center">
         <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
@@ -51,6 +67,18 @@ export const Contact = () => {
               <span>Kraków i okolice</span>
             </div>
           </div>
+          <div className="mb-4 flex flex-col gap-2 items-start justify-start">
+            <p>Umów się na darmową konsultację:</p>
+            <button onClick={onCalendly}>
+              <GatsbyImage
+                alt="Kalendarz google"
+                image={getImage(calendar)}
+                className="w-28 h-8"
+                objectFit="contain"
+                objectPosition="center"
+              />
+            </button>
+          </div>
           <div className="flex gap-2">
             <FaFacebook className="cursor-pointer w-5 h-5" />
             <FaInstagram className="cursor-pointer w-5 h-5" />
@@ -77,6 +105,7 @@ export const Contact = () => {
           </Button>
         </form>
       </div>
+      {renderPetals(petals)}
     </section>
   );
 };

@@ -6,10 +6,10 @@ import { Services } from "components/services";
 import { Features } from "components/features";
 import { Pricing } from "components/pricing";
 import { SocialMedia } from "components/social-media";
-import { Calendar } from "components/calendar";
 import { FAQ } from "components/faq";
 import { Contact } from "components/contact";
 import { Steps } from "components/steps";
+import { Welcome } from "components/welcome";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -17,11 +17,11 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero />
       <About />
       <Steps />
+      <Welcome />
       {/* <Services /> */}
       <Features />
       <Pricing />
       <SocialMedia />
-      <Calendar />
       <FAQ />
       <Contact />
     </>

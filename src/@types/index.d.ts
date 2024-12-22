@@ -18,3 +18,7 @@ declare module "*.md" {
   const path: string;
   export default path;
 }
+
+interface Window {
+  Calendly: any;
+}

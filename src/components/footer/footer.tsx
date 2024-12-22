@@ -13,14 +13,20 @@ export const Footer = () => {
   const { footer } = useImagesContext();
   const [email, setEmail] = React.useState("");
 
+  const onCalendly = () => {
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/eladancestudio/konsultacja",
+    });
+  };
+
   return (
     <section className="w-full relative items-center justify-center flex py-8 lg:py-10">
       <div className="layout-container items-center">
         <img className="h-14 m-auto" src={logo} alt="Logo" />
         <div className="flex flex-col gap-6 justify-between my-6 lg:flex-row lg:my-10">
           <div className="text-sm flex flex-col gap-1 lg:gap-2">
-            <h6 className="text-base text-gray-900">Newsletter</h6>
-            <p>Ciekawostki ze świata tańca, turniejów i nowe kursy.</p>
+            <h6 className="text-base text-gray-900">Darmowy e-book</h6>
+            <p>Podstawowa wiedza na temat pierwszego tańca i tego jak zacząć</p>
             <Input
               placeholder="Email"
               value={email}
@@ -50,6 +56,9 @@ export const Footer = () => {
                 <CgPin className="w-4 h-4" />
                 <span>Kraków i okolice</span>
               </div>
+              <button onClick={onCalendly} className="flex underline">
+                Darmowa konsultacja
+              </button>
             </div>
           </div>
           <div className="text-sm flex flex-col gap-1 lg:gap-2">

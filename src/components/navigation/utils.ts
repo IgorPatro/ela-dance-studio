@@ -1,5 +1,6 @@
 export const homeUrl = "";
 export const aboutUrl = "about";
+export const welcomeUrl = "welcome";
 export const pricingUrl = "pricing";
 export const contactUrl = "contact";
 export const faqUrl = "faq";
@@ -17,6 +18,10 @@ export const NAVIGATION = [
   {
     name: "Pierwsze kroki",
     link: "#" + stepsUrl,
+  },
+  {
+    name: "Wprowadzenie",
+    link: "#" + welcomeUrl,
   },
   {
     name: "Cennik",

@@ -95,6 +95,16 @@ export const imagesQuery = graphql`
         )
       }
     }
+    calendar: file(name: { eq: "calendar" }) {
+      childImageSharp {
+        gatsbyImageData(
+          quality: 100
+          placeholder: BLURRED
+          layout: CONSTRAINED
+          formats: WEBP
+        )
+      }
+    }
     footer: file(name: { eq: "footer" }) {
       childImageSharp {
         gatsbyImageData(

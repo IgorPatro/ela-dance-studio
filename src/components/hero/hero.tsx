@@ -4,8 +4,7 @@ import { useImagesContext } from "context/images-context/images-context";
 import { getImage } from "utils/image";
 import { CgInfinity } from "react-icons/cg";
 import { Button } from "components/shared/button";
-import { homeUrl } from "components/navigation/utils";
-import { Petal } from "components/shared/petal";
+import { aboutUrl, homeUrl } from "components/navigation/utils";
 import { renderPetals } from "utils/petal";
 
 const petals = [
@@ -36,7 +35,9 @@ export const Hero = () => {
           <p className="text-xl text-gray-500">
             Marzysz o wspaniałym tańcu na swoim ślubie? Ze mną to możliwe!
           </p>
-          <Button className="mt-6">Zobacz więcej</Button>
+          <Button href={"#" + aboutUrl} className="mt-6">
+            Zobacz więcej
+          </Button>
         </header>
       </div>
       <GatsbyImage
