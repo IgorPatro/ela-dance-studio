@@ -15,7 +15,9 @@ const STEP_ITEMS = [
   "Nauka tańca w przyjemej atmosferze 😉",
 ];
 
-const petals = ["w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
+const petals = [
+  "hidden lg:block w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]",
+];
 
 export const Steps = () => {
   const { petal } = useImagesContext();

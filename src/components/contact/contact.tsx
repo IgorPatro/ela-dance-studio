@@ -12,10 +12,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "utils/image";
 import { renderPetals } from "utils/petal";
 
-const petals = [
-  "w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]",
-  "w-8 h-8 absolute bottom-[15%] left-[5%] z-10 rotate-[-54deg]",
-];
+const petals = [" w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
 
 export const Contact = () => {
   const { calendar } = useImagesContext();

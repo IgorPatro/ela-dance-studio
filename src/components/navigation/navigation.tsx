@@ -41,7 +41,7 @@ export const Navigation = () => {
             alt="Logo"
           />
         </Link>
-        <ul className="md:flex gap-4 items-center hidden text-base">
+        <ul className="lg:flex gap-4 items-center hidden text-base">
           {NAVIGATION.map((item) => (
             <li
               className={twMerge(
@@ -58,7 +58,7 @@ export const Navigation = () => {
           ))}
         </ul>
         <button
-          className="flex md:hidden"
+          className="flex lg:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? (
@@ -92,7 +92,7 @@ export const Navigation = () => {
       {renderFixedNavigation()}
       <nav
         className={twMerge(
-          "w-full h-[120vh] flex md:hidden fixed top-0 left-0 bg-white z-40 transition-all",
+          "w-full h-[120vh] flex lg:hidden fixed top-0 left-0 bg-white z-40 transition-all",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
