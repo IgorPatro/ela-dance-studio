@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { CgInfinity } from "react-icons/cg";
 import { getImage } from "utils/image";
+import { renderPetals } from "utils/petal";
 
 const STEP_ITEMS = [
   "Wspólny wybór choreografi",
@@ -14,11 +15,13 @@ const STEP_ITEMS = [
   "Nauka tańca w przyjemej atmosferze 😉",
 ];
 
+const petals = ["w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
+
 export const Steps = () => {
   const { petal } = useImagesContext();
 
   return (
-    <section id={stepsUrl} className="py-10 lg:py-14 2xl:py-16">
+    <section id={stepsUrl} className="py-10 lg:py-14 2xl:py-16 relative">
       <div className="layout-container flex flex-col-reverse gap-8 lg:flex-row lg:items-center">
         <div className="lg:w-1/2">
           <ul className="flex flex-col gap-2">
@@ -59,6 +62,7 @@ export const Steps = () => {
           </Button>
         </header>
       </div>
+      {renderPetals(petals)}
     </section>
   );
 };

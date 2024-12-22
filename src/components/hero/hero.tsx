@@ -5,6 +5,17 @@ import { getImage } from "utils/image";
 import { CgInfinity } from "react-icons/cg";
 import { Button } from "components/shared/button";
 import { homeUrl } from "components/navigation/utils";
+import { Petal } from "components/shared/petal";
+import { renderPetals } from "utils/petal";
+
+const petals = [
+  "w-12 h-12 absolute bottom-[5%] right-[25%] z-10 rotate-[-55deg]",
+  "w-14 h-14 absolute top-[20%] left-[5%] z-10 rotate-[55deg]",
+  "hidden md:block w-8 h-8 absolute top-[25%] right-[5%] z-10 rotate-[35deg]",
+  "hidden lg:block w-8 h-8 absolute bottom-[15%] left-[25%] z-10 rotate-[39deg]",
+  "hidden lg:block w-8 h-8 absolute top-[15%] left-[45%] z-10 rotate-[195deg]",
+  "hidden xl:block w-18 h-18 absolute bottom-[20%] right-[10%] z-10 rotate-[195deg]",
+];
 
 export const Hero = () => {
   const { hero } = useImagesContext();
@@ -29,10 +40,11 @@ export const Hero = () => {
         </header>
       </div>
       <GatsbyImage
-        class="min-h-screen max-h-screen w-full absolute top-0 left-0 -z-10 [&>img]:object-bottom"
+        className="min-h-screen max-h-screen w-full absolute top-0 left-0 -z-10 [&>img]:object-bottom"
         image={getImage(hero)}
         alt="Para w sali tanecznej patrząca w okno"
       />
+      {renderPetals(petals)}
     </section>
   );
 };

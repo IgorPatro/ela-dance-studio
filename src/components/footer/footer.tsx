@@ -16,7 +16,7 @@ export const Footer = () => {
   return (
     <section className="w-full relative items-center justify-center flex py-8 lg:py-10">
       <div className="layout-container items-center">
-        <img className="h-8 m-auto" src={logo} alt="Logo" />
+        <img className="h-14 m-auto" src={logo} alt="Logo" />
         <div className="flex flex-col gap-6 justify-between my-6 lg:flex-row lg:my-10">
           <div className="text-sm flex flex-col gap-1 lg:gap-2">
             <h6 className="text-base text-gray-900">Newsletter</h6>
@@ -38,8 +38,8 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
                 <TfiEmail className="w-4 h-4" />
-                <a href="mailto:hello@eladancestudio.pl">
-                  hello@eladancestudio.pl
+                <a href="mailto:eladancestudio@gmail.com">
+                  eladancestudio@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">

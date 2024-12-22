@@ -36,7 +36,7 @@ export const Navigation = () => {
       >
         <Link to="/">
           <img
-            className={twMerge("h-6 lg:h-10", logoClassName)}
+            className={twMerge("h-6 lg:h-16", logoClassName)}
             src={logo}
             alt="Logo"
           />

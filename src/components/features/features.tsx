@@ -4,6 +4,7 @@ import { Feature } from "components/features/feature";
 import { FaCar } from "react-icons/fa";
 import { ImUserTie } from "react-icons/im";
 import { TbBulb } from "react-icons/tb";
+import { renderPetals } from "utils/petal";
 
 const FEATURE_ITEMS = [
   {
@@ -32,9 +33,14 @@ const FEATURE_ITEMS = [
   },
 ];
 
+const petals = [
+  "w-18 h-18 absolute top-[15%] left-[5%] z-10 rotate-[235deg]",
+  "w-8 h-8 absolute top-[15%] right-[10%] z-10 rotate-[-45deg]",
+];
+
 export const Features = () => {
   return (
-    <section className="py-10 lg:py-14 2xl:py-16">
+    <section className="relative py-10 lg:py-14 2xl:py-16">
       <div className="layout-container flex flex-col gap-8 lg:flex-row 2xl:gap-12 w-full">
         {FEATURE_ITEMS.map((item) => (
           <Feature key={item.title} icon={item.icon} title={item.title}>
@@ -42,6 +48,7 @@ export const Features = () => {
           </Feature>
         ))}
       </div>
+      {renderPetals(petals)}
     </section>
   );
 };

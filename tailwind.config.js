@@ -11,11 +11,14 @@ module.exports = {
         body: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#D999A3",
-        accent: "#FFDEE3",
+        primary: "#D899A2",
+        accent: "#FEE5EB",
       },
       maxWidth: {
         320: "80rem",
+      },
+      width: {
+        18: "4.5rem",
       },
     },
   },

@@ -38,8 +38,8 @@ export const Contact = () => {
           <div className="flex flex-col gap-1 my-4">
             <div className="flex items-center gap-2">
               <TfiEmail className="w-4 h-4" />
-              <a href="mailto:hello@eladancestudio.pl">
-                hello@eladancestudio.pl
+              <a href="mailto:eladancestudio@gmail.com">
+                eladancestudio@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2">

@@ -1,9 +1,16 @@
 import { aboutUrl } from "components/navigation/utils";
+import { Petal } from "components/shared/petal";
 import { useImagesContext } from "context/images-context/images-context";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { CgInfinity } from "react-icons/cg";
 import { getImage } from "utils/image";
+import { renderPetals } from "utils/petal";
+
+const petals = [
+  "w-18 h-18 absolute top-[15%] -left-6 z-10 rotate-[135deg]",
+  "w-8 h-8 absolute top-[25%] right-[10%] z-10 rotate-[225deg]",
+];
 
 export const About = () => {
   const { about } = useImagesContext();
@@ -11,9 +18,9 @@ export const About = () => {
   return (
     <section
       id={aboutUrl}
-      className="py-10 lg:py-14 lg:pt-24 2xl:py-16 2xl:pt-32"
+      className="relative py-10 lg:py-14 lg:pt-24 2xl:py-16 2xl:pt-32"
     >
-      <div className="layout-container flex flex-col gap-8 lg:flex-row">
+      <div className="layout-container flex flex-col gap-8 lg:flex-row lg:gap-16 items-center justify-center">
         <header className="flex flex-col gap-2 max-w-4xl lg:w-1/2">
           <p className="uppercase flex gap-2 items-center text-base text-primary">
             <CgInfinity className="w-8 h-8" /> dowiedź się więcej
@@ -32,12 +39,18 @@ export const About = () => {
             pulvinar, molestie eros non, consectetur tortor.
           </p>
         </header>
-        <GatsbyImage
-          className="w-full max-w-96 m-auto lg:w-1/2 object-contain"
-          image={getImage(about)}
-          alt="O nas"
-        />
+        <div className="image-wrapper w-full relative lg:w-1/2">
+          <GatsbyImage
+            className="w-full"
+            image={getImage(about)}
+            alt="O nas"
+            objectFit="contain"
+            objectPosition="center"
+          />
+          <Petal className="w-16 h-16 absolute bottom-[-15%] left-[43%] z-10 rotate-[135deg]" />
+        </div>
       </div>
+      {renderPetals(petals)}
     </section>
   );
 };

@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply font-body font-light text-gray-500;
+  @apply font-body font-light text-gray-500 overflow-x-hidden;
 }
 
 .layout-container {
