@@ -11,19 +11,61 @@ import { useImagesContext } from "context/images-context/images-context";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "utils/image";
 import { renderPetals } from "utils/petal";
+import { Textarea } from "components/shared/textarea/textarea";
 
-const petals = [" w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
+const petals = ["w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
 
 export const Contact = () => {
   const { calendar } = useImagesContext();
-
   const [email, setEmail] = React.useState("");
   const [name, setName] = React.useState("");
   const [phone, setPhone] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [isMissingData, setIsMissingData] = React.useState(false);
+  const [isError, setIsError] = React.useState(false);
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const cleanupForm = () => {
+    setEmail("");
+    setName("");
+    setPhone("");
+    setMessage("");
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log({ email, name, phone });
+
+    if (!name && (!email || !phone)) {
+      setIsMissingData(true);
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      await fetch("https://formspree.io/f/mkggnegz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+        }),
+      });
+      setIsSuccess(true);
+      setIsLoading(false);
+      setIsError(false);
+      setIsMissingData(false);
+      cleanupForm();
+    } catch (error) {
+      setIsError(true);
+      setIsSuccess(false);
+      setIsLoading(false);
+      setIsMissingData(false);
+    }
   };
 
   const onCalendly = () => {
@@ -57,7 +99,7 @@ export const Contact = () => {
             </div>
             <div className="flex items-center gap-2">
               <CgPhone className="w-4 h-4" />
-              <a href="tel:+48111222333">+48 111 222 333</a>
+              <a href="tel:+48515769690">+48 515 769 690</a>
             </div>
             <div className="flex items-center gap-2">
               <CgPin className="w-4 h-4" />
@@ -97,7 +139,25 @@ export const Contact = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-          <Button type="submit" className="mt-4">
+          <Textarea
+            placeholder="Wiadomość"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          {isMissingData ? (
+            <p>
+              Dodaj swoje imię oraz email lub telefon, aby wysłać formularz.
+            </p>
+          ) : null}
+          {isError ? (
+            <p className="text-red-700">
+              Oops! Coś poszło nie tak. Spróbuj ponownie później.
+            </p>
+          ) : null}
+          {isSuccess ? (
+            <p>Dziękuję za kontakt. Skontaktuję się z Tobą w ciągu 24h.</p>
+          ) : null}
+          <Button disabled={isLoading} type="submit" className="mt-4">
             wyślij
           </Button>
         </form>

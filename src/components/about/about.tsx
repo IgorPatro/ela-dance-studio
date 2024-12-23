@@ -8,7 +8,7 @@ import { getImage } from "utils/image";
 import { renderPetals } from "utils/petal";
 
 const petals = [
-  "hidden lg:block w-18 h-18 absolute top-[15%] -left-6 z-10 rotate-[135deg]",
+  "!hidden lg:!block w-18 h-18 absolute top-[15%] -left-6 z-10 rotate-[135deg]",
   "w-8 h-8 absolute top-[25%] right-[1%] lg:right-[10%] z-10 rotate-[225deg]",
 ];
 

@@ -4,9 +4,17 @@ import { twMerge } from "tailwind-merge";
 import { CiMenuFries } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "gatsby";
-import { NAVIGATION } from "./utils";
+import { getNavigation } from "./utils";
 
-export const Navigation = () => {
+interface NavigationProps {
+  alwaysFixed?: boolean;
+  isHome?: boolean;
+}
+
+export const Navigation = ({
+  alwaysFixed = false,
+  isHome = false,
+}: NavigationProps) => {
   const [passedHeroSection, setPassedHeroSection] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -42,7 +50,7 @@ export const Navigation = () => {
           />
         </Link>
         <ul className="lg:flex gap-4 items-center hidden text-base">
-          {NAVIGATION.map((item) => (
+          {getNavigation(isHome).map((item) => (
             <li
               className={twMerge(
                 "relative overflow-hidden py-1 text-black",
@@ -76,7 +84,7 @@ export const Navigation = () => {
   };
 
   const renderFixedNavigation = () => {
-    const isVisible = passedHeroSection || isOpen;
+    const isVisible = alwaysFixed ? true : passedHeroSection || isOpen;
 
     return renderNavigation(
       `fixed bg-white drop-shadow-md fixed bg-white drop-shadow-md duration-200 ${
@@ -88,7 +96,7 @@ export const Navigation = () => {
 
   return (
     <>
-      {renderHeroNavigation()}
+      {alwaysFixed ? null : renderHeroNavigation()}
       {renderFixedNavigation()}
       <nav
         className={twMerge(
@@ -97,7 +105,7 @@ export const Navigation = () => {
         )}
       >
         <ul className="flex flex-col gap-4 p-10 pt-24">
-          {NAVIGATION.map((item) => (
+          {getNavigation(isHome).map((item) => (
             <li key={item.name}>
               <Link to={item.link} onClick={() => setIsOpen(false)}>
                 {item.name}

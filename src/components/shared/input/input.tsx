@@ -9,7 +9,7 @@ export const Input = (props: InputProps) => {
   return (
     <div className="relative flex w-full">
       <input
-        className="text-sm w-full border-b border-gray-500 p-4 bg-transparent"
+        className="bg-gray-50 text-sm w-full border-b border-gray-500 p-4 bg-transparent"
         {...props}
       />
       {props.icon}

@@ -13,7 +13,7 @@ export const Petal = ({ className }: PetalProps) => {
 
   return (
     <GatsbyImage
-      className={twMerge(className, "opacity-80")}
+      className={twMerge(className, "!absolute opacity-80")}
       image={getImage(petal)}
       alt="Płatek róży"
       objectFit="contain"

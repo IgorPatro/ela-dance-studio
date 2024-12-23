@@ -7,6 +7,7 @@ interface ButtonProps {
   className?: string;
   type?: "button" | "submit" | "reset";
   href?: string;
+  disabled?: boolean;
 }
 
 export const Button = ({
@@ -14,20 +15,27 @@ export const Button = ({
   className,
   type = "button",
   href,
+  disabled,
 }: ButtonProps) => {
   const Element = href ? "a" : "button";
 
   return (
     <Element
       className={twMerge(
-        "uppercase group relative py-3 flex w-fit cursor-pointer text-sm px-8 border-gray-500 overflow-hidden border-y-2 font-normal",
-        className
+        "uppercase group relative py-3 flex w-fit text-sm px-8 border-gray-500 overflow-hidden border-y-2 font-normal",
+        className,
+        disabled ? "bg-gray-300" : "cursor-pointer"
       )}
       type={type}
       href={href}
     >
       <span className="z-10">{children}</span>
-      <div className="group-hover:translate-x-0 duration-300 ease-in-out -translate-x-[110%] transition-transform absolute top-0 left-0 w-full h-full bg-accent"></div>
+      <div
+        className={twMerge(
+          " duration-300 ease-in-out -translate-x-[110%] transition-transform absolute top-0 left-0 w-full h-full bg-accent",
+          disabled ? "" : "group-hover:translate-x-0"
+        )}
+      ></div>
     </Element>
   );
 };

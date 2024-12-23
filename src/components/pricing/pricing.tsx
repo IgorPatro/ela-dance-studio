@@ -24,8 +24,8 @@ const PRICING_ITEMS = [
 ];
 
 const petals = [
-  "hidden lg:block w-18 h-18 absolute bottom-[15%] -right-8 z-10 rotate-[45deg]",
-  "hidden lg:block w-8 h-8 absolute bottom-[15%] left-[10%] z-10 rotate-[119deg]",
+  "!hidden lg:!block w-18 h-18 absolute bottom-[15%] -right-8 z-10 rotate-[45deg]",
+  "!hidden lg:!block w-8 h-8 absolute bottom-[15%] left-[10%] z-10 rotate-[119deg]",
 ];
 
 export const Pricing = () => {

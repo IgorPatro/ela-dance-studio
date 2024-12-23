@@ -34,7 +34,7 @@ const FEATURE_ITEMS = [
 ];
 
 const petals = [
-  "hidden lg:block w-18 h-18 absolute top-[-10%] left-[5%] z-10 rotate-[235deg]",
+  "!hidden lg:!block w-18 h-18 absolute top-[-10%] left-[5%] z-10 rotate-[235deg]",
   "w-8 h-8 absolute top-[15%] right-[1%] lg:right-[10%] z-10 rotate-[-45deg]",
 ];
 

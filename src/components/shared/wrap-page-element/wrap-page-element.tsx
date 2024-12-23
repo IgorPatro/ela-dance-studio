@@ -7,7 +7,6 @@ export const WrapPageElement: GatsbyBrowser["wrapPageElement"] = ({
   element,
 }) => (
   <main>
-    <Navigation />
     {element}
     <Footer />
   </main>

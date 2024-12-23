@@ -10,10 +10,12 @@ import { FAQ } from "components/faq";
 import { Contact } from "components/contact";
 import { Steps } from "components/steps";
 import { Welcome } from "components/welcome";
+import { Navigation } from "components/navigation";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
+      <Navigation isHome />
       <Hero />
       <About />
       <Steps />
@@ -30,4 +32,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Ela Dance Studio | Kraków</title>;
+export const Head: HeadFC = () => (
+  <>
+    <meta name="robots" content="noindex" />
+    <title>Ela Dance Studio | Kraków</title>
+  </>
+);

@@ -27,7 +27,7 @@ export const SocialMedia = () => {
         </header>
       </div>
       <GatsbyImage
-        class="min-h-full max-h-full h-full w-full absolute top-0 left-0 -z-10 [&>img]:object-top"
+        class="min-h-full max-h-full h-full w-full !absolute top-0 left-0 -z-10 [&>img]:object-top"
         image={getImage(social_media)}
         alt="Para w trzymająca się za ręcę na białym tle"
       />

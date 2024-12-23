@@ -2,9 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `ela-dance-studio`,
+    title: `Ela Dance Studio | Kraków`,
     // TODO: Add domain here in the future
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://eladancestudio.pl`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

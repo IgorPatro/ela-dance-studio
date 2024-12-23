@@ -6,37 +6,37 @@ export const contactUrl = "contact";
 export const faqUrl = "faq";
 export const stepsUrl = "steps";
 
-export const NAVIGATION = [
+export const getNavigation = (isHome: boolean) => [
   {
     name: "Home",
-    link: "#" + homeUrl,
+    link: isHome ? "#" + homeUrl : "/",
   },
   {
     name: "O mnie",
-    link: "#" + aboutUrl,
+    link: isHome ? "#" + aboutUrl : "/",
   },
   {
     name: "Pierwsze kroki",
-    link: "#" + stepsUrl,
+    link: isHome ? "#" + stepsUrl : "/",
   },
   {
     name: "Wprowadzenie",
-    link: "#" + welcomeUrl,
+    link: isHome ? "#" + welcomeUrl : "/",
   },
   {
     name: "Cennik",
-    link: "#" + pricingUrl,
+    link: isHome ? "#" + pricingUrl : "/",
   },
   //   {
   //     name: "Opinie",
-  //     link: "#" +"#testimonials",
+  //     link: isHome ?  "#" +"#testimonials": "/",
   //   },
   {
     name: "FAQ",
-    link: "#" + faqUrl,
+    link: isHome ? "#" + faqUrl : "/",
   },
   {
     name: "Kontakt",
-    link: "#" + contactUrl,
+    link: isHome ? "#" + contactUrl : "/",
   },
 ];

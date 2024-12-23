@@ -50,7 +50,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CgPhone className="w-4 h-4" />
-                <a href="tel:+48111222333">+48 111 222 333</a>
+                <a href="tel:+48515769690">+48 515 769 690</a>
               </div>
               <div className="flex items-center gap-2">
                 <CgPin className="w-4 h-4" />
@@ -80,11 +80,13 @@ export const Footer = () => {
 
         <div className="text-xs flex justify-between">
           <span>All rights reserved &copy; 2024</span>
-          <Link to="/polityka">Polityka prywatności</Link>
+          <Link className="underline" to="/polityka-prywatnosci">
+            Polityka prywatności
+          </Link>
         </div>
       </div>
       <GatsbyImage
-        class="min-h-full max-h-full h-full w-full absolute top-0 left-0 -z-10 [&>img]:object-bottom"
+        class="min-h-full max-h-full h-full w-full !absolute top-0 left-0 -z-10 [&>img]:object-bottom"
         image={getImage(footer)}
         alt="Szara firanka"
       />
