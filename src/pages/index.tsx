@@ -34,7 +34,6 @@ export default IndexPage;
 
 export const Head: HeadFC = () => (
   <>
-    <meta name="robots" content="noindex" />
     <title>Ela Dance Studio | Kraków</title>
   </>
 );

@@ -47,7 +47,14 @@ export const WrapRootElement: GatsbyBrowser["wrapRootElement"] = ({
           `,
       }}
     />
-
+    {/* Cookiebot */}
+    <Script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="0da49446-6427-44bc-b1f7-75aaa754c517"
+      data-blockingmode="auto"
+      type="text/javascript"
+    />
     {element}
   </ImagesContextProvider>
 );
