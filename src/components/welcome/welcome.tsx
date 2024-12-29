@@ -38,7 +38,7 @@ export const Welcome = () => {
           </p>
           <h1 className="font-display text-5xl text-gray-900">Wprowadzenie</h1>
           <p className="text-base text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
             distinctio.
           </p>
         </header>

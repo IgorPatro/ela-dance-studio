@@ -19,10 +19,10 @@ export const getNavigation = (isHome: boolean) => [
     name: "Pierwsze kroki",
     link: isHome ? "#" + stepsUrl : "/",
   },
-  {
-    name: "Wprowadzenie",
-    link: isHome ? "#" + welcomeUrl : "/",
-  },
+  // {
+  //   name: "Wprowadzenie",
+  //   link: isHome ? "#" + welcomeUrl : "/",
+  // },
   {
     name: "Cennik",
     link: isHome ? "#" + pricingUrl : "/",

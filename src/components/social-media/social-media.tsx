@@ -17,12 +17,25 @@ export const SocialMedia = () => {
           </p>
           <h1 className="font-display text-5xl text-gray-900">Social Media</h1>
           <p className="text-base text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
-            quam odio. Proin elementum in nibh at maximus.
+            Obserwuj mnie w mediach społecznościowych, aby być na bieżąco z
+            zajęciami i wydarzeniami! Znajdziesz tam również sporo ciekawych
+            fotek i filmików z moich zajęć
           </p>
           <div className="flex gap-8">
-            <Button className="mt-5">Instagram</Button>
-            <Button className="mt-5">Facebook</Button>
+            <Button
+              target="_blank"
+              href="https://www.instagram.com/ela_dance_studio/"
+              className="mt-5"
+            >
+              Instagram
+            </Button>
+            <Button
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61570326290967"
+              className="mt-5"
+            >
+              Facebook
+            </Button>
           </div>
         </header>
       </div>

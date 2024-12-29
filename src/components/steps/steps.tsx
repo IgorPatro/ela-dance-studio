@@ -8,11 +8,11 @@ import { getImage } from "utils/image";
 import { renderPetals } from "utils/petal";
 
 const STEP_ITEMS = [
-  "Wspólny wybór choreografi",
+  "Konsultacja, poznanie Waszych oczekiwań",
+  "Wspólny wybór choreografi i piosenki",
   "Nauka podstawowych kroków",
-  "Nauka choreografii",
-  "Wybór idealnej piosenki",
-  "Nauka tańca w przyjemej atmosferze 😉",
+  "Szlifowanie choreografii",
+  "Próba generalna w przyjemej atmosferze 😉",
 ];
 
 const petals = [
@@ -55,9 +55,10 @@ export const Steps = () => {
             trenować codzienie!
           </p>
           <p>
-            A po wszystkim jeżeli tylko będziecie chcieli potrenujemy taniec
-            użytkowy, dzięki któremu zatańczycie do każdej muzyki i w każdym
-            miejscu. W końcu na weselu trzeba czarować całą noc 😉
+            Po wszystkim będziecie gotowi, by samodzielnie i swobodnie tańczyć
+            do każdej muzyki i w każdej sytuacji. Przy okazji nauczycie się
+            podstaw tańca użytkowego, dzięki czemu na weselu będziecie mogli
+            czarować na parkiecie przez całą noc! 😊
           </p>
           <Button className="mt-4" href={"#" + contactUrl}>
             Rozpocznij naukę

@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero />
       <About />
       <Steps />
-      <Welcome />
+      {/* <Welcome /> */}
       {/* <Services /> */}
       <Features />
       <Pricing />

@@ -10,25 +10,25 @@ const FEATURE_ITEMS = [
   {
     title: "Doświadczenie",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at quam odio. Proin elementum in nibh at maximus. ",
+      "Dzięki doświadczeniu ze sceny dostosowuję choreografię do Waszych umiejętności i stylu. Sprawię, że poczujecie się pewnie, a Wasz taniec będzie naturalny, piękny i pełen emocji.",
     icon: CiBadgeDollar,
   },
   {
     title: "Dojazd do domu",
     content:
-      "Pellentesque dapibus iaculis imperdiet. Vestibulum eget ligula iaculis, semper neque eu, sagittis est.",
+      "Brakuje czasu na dojazdy do studia? Oferuję lekcje pierwszego tańca z dojazdem do Waszego domu lub wybranego miejsca. Wygoda i dbałość o każdy szczegół gwarantowane.",
     icon: FaCar,
   },
   {
     title: "Personalne podejście",
     content:
-      "Quisque eget dolor sit amet tellus pretium sodales. Nunc rhoncus tellus id velit",
+      "Każdą choreografię dopasowuję do Waszych pomysłów, muzyki i poziomu zaawansowania. Bez względu na doświadczenie taneczne, sprawię, że poczujecie się swobodnie.",
     icon: ImUserTie,
   },
   {
     title: "Kreatywność",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at quam odio. Proin elementum in nibh at maximus. ",
+      "Wasza historia zasługuje na wyjątkową oprawę. Tworzę choreografie, które wyrażają Wasze emocje i styl – od klasyki po nietypowe rozwiązania, które na długo zapadną w pamięć.",
     icon: TbBulb,
   },
 ];

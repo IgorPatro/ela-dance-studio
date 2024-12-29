@@ -65,12 +65,20 @@ export const Footer = () => {
             <h6 className="text-base text-gray-900">Social Media</h6>
             <ul>
               <li>
-                <a href="https://www.instagram.com/ela_dance_studio/">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/ela_dance_studio/"
+                >
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/eladancestudio">Facebook</a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61570326290967"
+                >
+                  Facebook
+                </a>
               </li>
             </ul>
           </div>

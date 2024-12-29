@@ -15,11 +15,11 @@ const PRICING_ITEMS = [
   },
   {
     title: "10 lekcji (po 60 minut)",
-    price: "140 PLN / lekcja",
+    price: "10-ta lekcja za darmo",
   },
   {
-    title: "Zajęcia grupowe**",
-    price: "50 PLN / osoba",
+    title: "Zajęcia w grupie znajomych**",
+    price: "20% zniżki",
   },
 ];
 
@@ -37,10 +37,10 @@ export const Pricing = () => {
             <CgInfinity className="w-8 h-8" /> ile to kosztuje
           </p>
           <h1 className="font-display text-5xl text-gray-900">Cennik</h1>
-          <p className="text-base text-center">
+          {/* <p className="text-base text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
             distinctio.
-          </p>
+          </p> */}
         </header>
         <div className="max-w-3xl w-full m-auto">
           <table className="bg-accent rounded-xl m-auto w-full">
@@ -59,14 +59,14 @@ export const Pricing = () => {
           </table>
           <p className="text-xs mt-3">
             * dojazd możliwy na terenie Krakowa, w przypadku wystarczającej
-            ilości miejsca. Dowiedź się więcej{" "}
+            ilości miejsca w Waszym lokalu. Dowiedź się więcej{" "}
             <Link to="#faq" className="underline">
               tutaj
             </Link>
           </p>
           <p className="text-xs mt-1">
-            ** zajęcia grupowe odbywają się w grupach od 3 do 6 osób w przypadku
-            uformowania grupy
+            ** jeśli zdecydujecie się na zajęcia w grupie znajomych, każda para
+            otrzyma 20% zniżki
           </p>
         </div>
       </div>

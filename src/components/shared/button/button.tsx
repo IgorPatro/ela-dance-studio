@@ -8,6 +8,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
   href?: string;
   disabled?: boolean;
+  target?: string;
 }
 
 export const Button = ({
@@ -16,6 +17,7 @@ export const Button = ({
   type = "button",
   href,
   disabled,
+  target,
 }: ButtonProps) => {
   const Element = href ? "a" : "button";
 
@@ -28,6 +30,7 @@ export const Button = ({
       )}
       type={type}
       href={href}
+      target={target}
     >
       <span className="z-10">{children}</span>
       <div

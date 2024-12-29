@@ -27,23 +27,26 @@ export const About = () => {
           </p>
           <h1 className="font-display text-5xl text-gray-900">O mnie</h1>
           <p className="text-xl">
-            Nasze szybkie motto tutaj znaleźć się powinno i naszych kursantów
-            motywować
+            Pomagam parom tworzyć wyjątkowe choreografie na najważniejsze chwile
+            w ich życiu 💃✨
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
-            quam odio. Proin elementum in nibh at maximus. Pellentesque dapibus
-            iaculis imperdiet. Vestibulum eget ligula iaculis, semper neque eu,
-            sagittis est. Quisque eget dolor sit amet tellus pretium sodales ❤️
-            Nunc rhoncus tellus id velit finibus ultrices. Praesent sed tortor
-            pulvinar, molestie eros non, consectetur tortor.
+            Moja przygoda z tańcem zaczęła się, gdy miałam 4 lata i szybko stał
+            się on moją największą pasją. Dziś posiadam najwyższą polską klasę
+            taneczną „A” w stylu standardowym i mam na koncie liczne sukcesy na
+            turniejach w Polsce i za granicą, w tym finały Pucharu Mariana
+            Wieczystego i Pucharu Polski.
+          </p>
+          <p>
+            Taniec pozwala mi wyrażać emocje i czerpać radość, którą z pasją
+            przekazuję innym, pomagając im odkrywać piękno ruchu 😊
           </p>
         </header>
         <div className="image-wrapper w-full relative lg:w-1/2">
           <GatsbyImage
             className="w-full"
             image={getImage(about)}
-            alt="O nas"
+            alt="O mnie"
             objectFit="contain"
             objectPosition="center"
           />

@@ -88,7 +88,7 @@ export const Contact = () => {
           <p className="text-base">
             Zostaw smój telefon lub email, a ja skontaktuję się z Tobą w ciągu
             24h. Możesz też napisać do mnie bezpośrednio na adres email. Jeśli
-            Ci wygodniej śmiało pisz te na social-mediach!
+            Ci wygodniej śmiało pisz też na social-mediach!
           </p>
           <div className="flex flex-col gap-1 my-4">
             <div className="flex items-center gap-2">
@@ -119,8 +119,18 @@ export const Contact = () => {
             </button>
           </div>
           <div className="flex gap-2">
-            <FaFacebook className="cursor-pointer w-5 h-5" />
-            <FaInstagram className="cursor-pointer w-5 h-5" />
+            <a
+              target="_blank"
+              href="https://www.instagram.com/ela_dance_studio/"
+            >
+              <FaInstagram className="cursor-pointer w-5 h-5" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61570326290967"
+            >
+              <FaFacebook className="cursor-pointer w-5 h-5" />
+            </a>
           </div>
         </header>
         <form className="flex flex-col gap-4 lg:w-1/2" onSubmit={handleSubmit}>
