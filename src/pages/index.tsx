@@ -15,7 +15,7 @@ import { Navigation } from "components/navigation";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
-      {/* <Navigation isHome /> */}
+      <Navigation isHome />
       <Hero />
       <About />
       <Steps />
