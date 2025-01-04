@@ -59,7 +59,7 @@ export const Pricing = () => {
           </table>
           <p className="text-xs mt-3">
             * dojazd możliwy na terenie Krakowa, w przypadku wystarczającej
-            ilości miejsca w Waszym lokalu. Dowiedź się więcej{" "}
+            ilości miejsca w Waszym lokalu. Dowiedz się więcej{" "}
             <Link to="#faq" className="underline">
               tutaj
             </Link>

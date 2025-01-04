@@ -13,7 +13,9 @@ import { getImage } from "utils/image";
 import { renderPetals } from "utils/petal";
 import { Textarea } from "components/shared/textarea/textarea";
 
-const petals = ["w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]"];
+const petals = [
+  "!hidden lg:!block w-18 h-18 absolute top-[15%] -right-6 z-10 rotate-[-135deg]",
+];
 
 export const Contact = () => {
   const { calendar } = useImagesContext();
@@ -86,7 +88,7 @@ export const Contact = () => {
           </p>
           <h1 className="font-display text-5xl text-gray-900">Kontakt</h1>
           <p className="text-base">
-            Zostaw smój telefon lub email, a ja skontaktuję się z Tobą w ciągu
+            Zostaw swój telefon lub email, a ja skontaktuję się z Tobą w ciągu
             24h. Możesz też napisać do mnie bezpośrednio na adres email. Jeśli
             Ci wygodniej śmiało pisz też na social-mediach!
           </p>

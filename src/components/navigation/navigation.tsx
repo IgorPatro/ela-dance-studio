@@ -100,7 +100,7 @@ export const Navigation = ({
       {renderFixedNavigation()}
       <nav
         className={twMerge(
-          "w-full h-[120vh] flex lg:hidden fixed top-0 left-0 bg-white z-40 transition-all",
+          "w-screen h-[120vh] flex lg:hidden fixed top-0 left-0 bg-white z-40 transition-all",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

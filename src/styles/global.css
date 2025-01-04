@@ -14,10 +14,6 @@ body {
   @apply mx-auto w-full max-w-320 px-8 sm:px-12 md:px-16;
 }
 
-section {
-  @apply overflow-x-hidden;
-}
-
 .ReactCollapse--collapse {
   transition: height 300ms;
 }
