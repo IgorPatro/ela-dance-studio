@@ -17,10 +17,10 @@ const PRICING_ITEMS = [
     title: "10 lekcji (po 60 minut)",
     price: "10-ta lekcja za darmo",
   },
-  {
-    title: "Zajęcia w grupie znajomych**",
-    price: "20% zniżki",
-  },
+  // {
+  //   title: "Zajęcia w grupie znajomych**",
+  //   price: "20% zniżki",
+  // },
 ];
 
 const petals = [
@@ -64,10 +64,10 @@ export const Pricing = () => {
               tutaj
             </Link>
           </p>
-          <p className="text-xs mt-1">
+          {/* <p className="text-xs mt-1">
             ** jeśli zdecydujecie się na zajęcia w grupie znajomych, każda para
             otrzyma 20% zniżki
-          </p>
+          </p> */}
         </div>
       </div>
       {renderPetals(petals)}
