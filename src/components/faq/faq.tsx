@@ -22,7 +22,7 @@ const FAQ_ITEMS = [
   {
     title: "Gdzie odbywają się lekcje?",
     content:
-      "Moim stałym miejscem lekcji jest Wola Justowska. Często jednak istnieje możliwość wyboru innej sali na terenie Krakowa. W trakcie konsultacji przedstawiam inne możliwe adresy. Oczywiście istnieje też opcja dojazdu do Was do domu 😊",
+      "Moim stałym miejscem lekcji jest Wola Justowska, ul. Ludomiły Korbutowej 50, 30-218, Kraków. Często jednak istnieje możliwość wyboru innej sali na terenie Krakowa. W trakcie konsultacji przedstawiam inne możliwe adresy. Oczywiście istnieje też opcja dojazdu do Was do domu 😊",
   },
 ];
 
