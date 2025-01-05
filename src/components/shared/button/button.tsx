@@ -9,6 +9,7 @@ interface ButtonProps {
   href?: string;
   disabled?: boolean;
   target?: string;
+  onClick?: () => void;
 }
 
 export const Button = ({
@@ -18,6 +19,7 @@ export const Button = ({
   href,
   disabled,
   target,
+  onClick,
 }: ButtonProps) => {
   const Element = href ? "a" : "button";
 
@@ -31,11 +33,12 @@ export const Button = ({
       type={type}
       href={href}
       target={target}
+      onClick={onClick}
     >
       <span className="z-10">{children}</span>
       <div
         className={twMerge(
-          " duration-300 ease-in-out -translate-x-[110%] transition-transform absolute top-0 left-0 w-full h-full bg-accent",
+          "duration-300 ease-in-out -translate-x-[110%] transition-transform absolute top-0 left-0 w-full h-full bg-accent",
           disabled ? "" : "group-hover:translate-x-0"
         )}
       ></div>
