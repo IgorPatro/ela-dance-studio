@@ -43,5 +43,9 @@ export const Head: HeadFC = () => (
       name="keywords"
       content="nauka tańca, nauka tańca kraków, pierwszy taniec, pierwszy taniec kraków, kurs tańca, kurs tańca kraków, nauka tańca weselnego, pierwszy taniec weselny kraków, studio tańca kraków, taniec w krakowie, szkoła tańca, szkoła tańca kraków, kursy tańca indywidualne, instruktor tańca, kursy tańca dla par, choreografia, dwa na jeden, 2 na 1 kraków, taniec weselny, nauka walca, nauka walca weselnego, nauka tańca ślubnego, nauka pierwszego tańca, taniec towarzyski, taniec dla każdego"
     />
+    <meta property="og:site_name" content="Ela Dance Studio | Kraków" />
+    <meta property="og:url" content="https://eladancestudio.pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eladancestudio.pl/preview.png" />
   </>
 );
