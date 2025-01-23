@@ -14,7 +14,7 @@ const CookiesBanner = () => {
   }
 
   return (
-    <div className="fixed bottom-5 right-5 ml-5 bg-white p-5 shadow-md max-w-md rounded-lg flex flex-col gap-2 border border-gray-400 z-40">
+    <div className="fixed bottom-5 right-5 bg-white p-5 shadow-md max-w-[calc(100vw-40px)] w-96 rounded-lg flex flex-col gap-2 border border-gray-400 z-30">
       <p className="text-black font-medium">Cenimy prywatność użytkowników</p>
       <p className="text-sm">
         Używamy plików cookie, aby poprawić jakość przeglądania, wyświetlać
@@ -22,7 +22,7 @@ const CookiesBanner = () => {
         oraz analizować ruch na stronie. Kliknięcie przycisku „Akceptuję”
         oznacza zgodę na użycie plików cookie.
       </p>
-      <div className="flex gap-2 mt-2">
+      <div className="flex gap-2 mt-2 flex-wrap">
         <button
           className="text-sm text-gray-700 py-1 px-4 border-gray-700 border-2 hover:bg-gray-200 transition-colors"
           onClick={() => setCookie("cookie-consent", false)}

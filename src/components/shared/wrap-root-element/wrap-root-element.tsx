@@ -2,7 +2,6 @@ import * as React from "react";
 import { GatsbyBrowser, Script } from "gatsby";
 import { ImagesContextProvider } from "context/images-context";
 import { CookiesProvider } from "react-cookie";
-import CookiesBanner from "components/cookies-banner/cookies-banner";
 
 export const WrapRootElement: GatsbyBrowser["wrapRootElement"] = ({
   element,
@@ -59,7 +58,6 @@ export const WrapRootElement: GatsbyBrowser["wrapRootElement"] = ({
         type="text/javascript"
       /> */}
       {element}
-      <CookiesBanner />
     </ImagesContextProvider>
   </CookiesProvider>
 );
