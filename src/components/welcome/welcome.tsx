@@ -34,18 +34,14 @@ export const Welcome = () => {
       <div className="layout-container flex flex-col gap-8 justify-center items-center">
         <header className="flex flex-col gap-2 max-w-4xl text-center m-auto">
           <p className="uppercase flex gap-2 items-center text-base text-primary justify-center">
-            <CgInfinity className="w-8 h-8" /> nauka tańca
+            <CgInfinity className="w-8 h-8" /> wspólna nauka
           </p>
-          <h1 className="font-display text-5xl text-gray-900">Wprowadzenie</h1>
-          <p className="text-base text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            distinctio.
-          </p>
+          <h1 className="font-display text-5xl text-gray-900">Witajcie!</h1>
         </header>
         <div className="max-w-3xl w-full m-auto">
           <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
             <iframe
-              src="https://player.vimeo.com/video/1041550475?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              src="https://www.youtube.com/embed/N8mZh1EWT8I?si=1begsqJefzb-B7p7"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               style={{
                 position: "absolute",
