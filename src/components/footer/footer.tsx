@@ -43,6 +43,10 @@ export const Footer = () => {
             <h6 className="text-base text-gray-900">Kontakt</h6>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
+                <CgPin className="w-4 h-4" />
+                <span>Ludmiły Korbutowej 50, 30-218 Kraków</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <TfiEmail className="w-4 h-4" />
                 <a href="mailto:eladancestudio@gmail.com">
                   eladancestudio@gmail.com

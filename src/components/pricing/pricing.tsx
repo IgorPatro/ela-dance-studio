@@ -7,11 +7,11 @@ import { renderPetals } from "utils/petal";
 const PRICING_ITEMS = [
   {
     title: "Godzina lekcji (60 minut)",
-    price: "150 PLN",
+    price: "120 PLN",
   },
   {
     title: "Godzina lekcji (60 minut) - z dojazdem do domu*",
-    price: "200 PLN",
+    price: "150 PLN",
   },
   {
     title: "10 lekcji (po 60 minut)",

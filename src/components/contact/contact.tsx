@@ -94,6 +94,10 @@ export const Contact = () => {
           </p>
           <div className="flex flex-col gap-1 my-4">
             <div className="flex items-center gap-2">
+              <CgPin className="w-4 h-4" />
+              <span>Ludmiły Korbutowej 50, 30-218 Kraków</span>
+            </div>
+            <div className="flex items-center gap-2">
               <TfiEmail className="w-4 h-4" />
               <a href="mailto:eladancestudio@gmail.com">
                 eladancestudio@gmail.com
